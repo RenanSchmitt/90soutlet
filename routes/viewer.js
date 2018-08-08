@@ -12,15 +12,15 @@ products = [
     "image" : "images/chapeu.jpg",
     "descricao" : "É um chapéu muito bonito.",
     "valor" : 150.00,   
-    "tamanho" : "25",
+    "tamanho" : "10",
   },
   {    
     "name" : "Flanela",
     "slug" : "flanela",    
     "image" : "images/flanela.jpg",
-    "descricao" : "É um chapéu muito bonito.",
+    "descricao" : "Flanela vermelha.",
     "valor" : 150.00,
-    "tamanho" : "",   
+    "tamanho" : "P",   
   }
 ];
 
@@ -40,13 +40,14 @@ router.get('/', function(req, res, next) {
         var desc = prod.descricao;
         var prec = prod.valor;
         var slug = prod.slug;
+        var tam = prod.tamanho;
       }
     }
   }
 
   console.log(nome,imagem,desc,prec);
 
-  res.render('viewer', { title: nome, image: imagem, description: desc, price: prec});
+  res.render('viewer', { title: nome, image: imagem, description: desc, price: prec, size: tam});
 });
 
 module.exports = router;
