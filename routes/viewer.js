@@ -17,7 +17,7 @@ products = [
   {    
     "name" : "Flanela",
     "slug" : "flanela",    
-    "image" : "images/chapeu.jpg",
+    "image" : "images/flanela.jpg",
     "descricao" : "É um chapéu muito bonito.",
     "valor" : 150.00,
     "tamanho" : "",   
