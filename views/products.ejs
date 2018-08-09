@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,74 +12,92 @@
     <link rel="shortcut icon" type="images/png" href="images/favicon.png">
     <title>Produtos</title>
 </head>
+
 <body>
-        <nav class="nav-bar">
-            <h1>90`S Outlet</h1>
-            <div>
-                <a href="/" class="btn btn--animated btn--small">Logar</a>
-                <a href="/" class="btn btn--animated btn--small">Voltar</a>
-            </div>
-        </nav>
-        <h2 class="our-products"> Nossos produtos:</h2>
-        <div class="container">
-            <div class="card">
-               <a href="viewer?chapeu" id="chapeu" type="submit"> 
-                  <img src="images/chapeu.jpg" alt="Chapeu" style="width:100%"></img>
-                  <div class="container__card">
-                  <p><strong>Chapéu</strong></p> 
-                  <p>R$ 150,00</p> 
+    <nav class="nav-bar">
+        <h1>90`S Outlet</h1>
+        <div>
+            <a href="login" class="btn btn--animated btn--small">Logar</a>
+            <a href="/" class="btn btn--animated btn--small">Voltar</a>
+        </div>
+    </nav>
+    <h2 class="our-products"> Nossos produtos:</h2>
+    <div class="container">
+        
+     
+        <div class="card">
+            <a href="viewer?chapeu" id="<%= slugg %>" type="submit">
+                <img src="<%= image %>" alt="<%= slugg %>" style="width:100%"></img>
+                <div class="container__card">
+                    <p>
+                        <strong><%= title %></strong>
+                    </p>
+                    <p>R$ <%= price %></p>
                 </div>
+            </a>
+        </div>
+
+        <!-- <div class="card">
+                <a href="viewer?chapeu" id="chapeu" type="submit">
+                    <img src="images/chapeu.jpg" alt="Chapeu" style="width:100%"></img>
+                    <div class="container__card">
+                        <p>
+                            <strong>Chapéu</strong>
+                        </p>
+                        <p>R$ 150,00</p>
+                    </div>
                 </a>
             </div>
-    
-            <div class="card">
-                <a href="viewer?flanela" id="flanela"> 
+
+        <div class="card">
+            <a href="viewer?flanela" id="flanela">
                 <img src="images/flanela.jpg" alt="Avatar" style="width:100%">
                 <div class="container__card">
-                  <h4><b>Flanela</b></h4> 
-                  <p>R$ 200,00</p> 
+                    <h4>
+                        <b>Flanela</b>
+                    </h4>
+                    <p>R$ 200,00</p>
                 </div>
-                </a>
-            </div>
-    
-            <div class="card">
-                <a href="viewer?regata" id="regata"> 
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="viewer?regata" id="regata">
                 <img src="images/regata.jpg" alt="Avatar" style="width:100%">
                 <div class="container__card">
-                  <h4><b>Regata</b></h4> 
-                  <p>R$ 150,00</p> 
+                    <h4>
+                        <b>Regata</b>
+                    </h4>
+                    <p>R$ 150,00</p>
                 </div>
-                </a>
-            </div>
-    
-            <div class="card">
-                <a href="viewer?saiajeans" id="saiajeans"> 
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="viewer?saiajeans" id="saiajeans">
                 <img src="images/saiajeans.jpg" alt="Avatar" style="width:100%">
                 <div class="container__card">
-                  <h4><b>Saia Jeans</b></h4> 
-                  <p>R$ 250,00</p> 
+                    <h4>
+                        <b>Saia Jeans</b>
+                    </h4>
+                    <p>R$ 250,00</p>
                 </div>
-                </a>
-            </div>
-    
-            <div class="card">
-                <a href="viewer?casaco-couro" id="chapeu"> 
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="viewer?casaco-couro" id="chapeu">
                 <img src="images/casaco-couro.jpg" alt="Avatar" style="width:100%">
                 <div class="container__card">
-                  <h4><b>Casaco</b></h4> 
-                  <p>R$ 450,00</p> 
+                    <h4>
+                        <b>Casaco</b>
+                    </h4>
+                    <p>R$ 450,00</p>
                 </div>
-                </a>
-            </div>
-    
-            
-        
-        
-        
-        </div>
-        
-    
-    
-          
+            </a>
+        </div> -->
+
+    </div>
 </body>
+
 </html>

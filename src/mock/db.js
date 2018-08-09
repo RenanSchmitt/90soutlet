@@ -1,6 +1,4 @@
-var products = [];
-
-products = [   
+const products = [   
     {   
       "name" : "Chápeu",
       "slug" : "chapeu",
@@ -42,3 +40,5 @@ products = [
       "tamanho" : "M",   
     }
   ];
+  
+  module.exports = products;
