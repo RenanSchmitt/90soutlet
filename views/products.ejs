@@ -22,24 +22,24 @@
         </div>
     </nav>
     <h2 class="our-products"> Nossos produtos:</h2>
-    <div class="container">
-
-        <%  for (const key in prod_list) { %>
-            <% const prod = prod_list[key]; %>
-                <% for (const index in prod) {  %>
-                    <% } %>
-                        <div class="card">
-                            <a href="viewer?<%= prod.slug %>" id="<%= prod.slug %>">
-                                <img src="<%= prod.image %>" alt="<%= prod.nome %>" style="width:100%">
-                                <div class="container__card">
-                                    <h4>
-                                        <strong><%= prod.name %></strong>
-                                    </h4>
-                                    <p> R$: <%= prod.valor %></p>
-                                </div>
-                            </a>
+    <div class="container">    
+        <% prod_list.forEach((prod,index) => { %>
+            <div class="card">
+                    <a href="viewer?<%= prod.slug %>" id="<%= prod.slug %>">
+                        <img src="<%= prod.image %>" alt="<%= prod.nome %>" style="width:100%">
+                        <div class="container__card">
+                            <h4>
+                                <b>
+                                    <%= prod.name %>
+                                </b>
+                            </h4>
+                            <p> R$:
+                                <%= prod.price %>
+                            </p>
                         </div>
-        <% } %>
+                    </a>
+                </div>
+        <% }); %>                
     </div>
 </body>
 
