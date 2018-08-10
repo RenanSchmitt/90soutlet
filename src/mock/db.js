@@ -38,6 +38,14 @@ const products = [
       "descricao" : "Ótimo casaco, esta em perfeitas condições..",
       "valor" : 260.00,
       "tamanho" : "M",   
+    },
+    {    
+      "name" : "Touca de lã preta ",
+      "slug" : "touca-pretsa",    
+      "image" : "images/touca.jpg",
+      "descricao" : "Touca de lã preta, combina com tudo",
+      "valor" : 25.00,
+      "tamanho" : "10",   
     }
   ];
   
