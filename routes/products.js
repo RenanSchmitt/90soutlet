@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const products = require('./../src/mock/db');
 
-/* GET home page. */
+
 router.get('/', function(req, res, next) {
   // res.render('products', { title: 'Express' , id: "" });
   
@@ -26,10 +26,9 @@ router.get('/', function(req, res, next) {
         tam = prod.tamanho;   
     }
   }
-  res.render('products', { productss: products });
+  console.log(products);
+  res.render('products', { prod_list: products });
 
 });
-
-// title: nome, image: imagem, description: desc, price: prec, size: tam, slugg: slug
 
 module.exports = router;
