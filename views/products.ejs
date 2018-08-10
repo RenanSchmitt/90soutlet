@@ -27,12 +27,12 @@
      
         <div class="card">
             <a href="viewer?chapeu" id="<%= prod.slug %>" type="submit">
-                <img src="<%= image %>" alt="<%= slugg %>" style="width:100%"></img>
+                <img src="<%= prod.image %>" alt="<%= slugg %>" style="width:100%"></img>
                 <div class="container__card">
                     <p>
-                        <strong><%= title %></strong>
+                        <strong><%= prod.name %></strong>
                     </p>
-                    <p>R$ <%= price %></p>
+                    <p>R$ <%= prod.valor %></p>
                 </div>
             </a>
         </div>
