@@ -27,7 +27,7 @@ const products = [
       "name" : "Saia Jeans",
       "slug" : "saia",    
       "image" : "images/saia.jpg",
-      "descricao" : "Saia Jeans com bot]oes na parte da frente.",
+      "descricao" : "Saia Jeans com botões na parte da frente.",
       "valor" : 75.00,
       "tamanho" : "M",   
     },
