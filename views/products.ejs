@@ -3,44 +3,144 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <title>bulma cards</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cards.css">
 
-    <link rel="stylesheet" href="css/icon-font.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="shortcut icon" type="images/png" href="images/favicon.png">
-    <title>Produtos</title>
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <h1>90`S Outlet</h1>
-        <div>
-            <a href="login" class="btn btn--animated btn--small">Logar</a>
-            <a href="/" class="btn btn--animated btn--small">Voltar</a>
-        </div>
-    </nav>
-    <h2 class="our-products"> Nossos produtos:</h2>
-    <div class="container">    
-        <% prod_list.forEach((prod,index) => { %>
-            <div class="card">
-                    <a href="viewer?<%= prod.slug %>" id="<%= prod.slug %>">
-                        <img src="<%= prod.image %>" alt="<%= prod.nome %>" style="width:100%">
-                        <div class="container__card">
-                            <h4>
-                                <b>
-                                    <%= prod.name %>
-                                </b>
-                            </h4>
-                            <p> R$:
-                                <%= prod.price %>
-                            </p>
+
+        <!-- START NAV -->
+        <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                                <img src="../images/logo.png" alt="Logo">
+                            </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                        <span></span>
+                        <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active" href="/">
+                                    Home
+                                </a>
+                            <a class="navbar-item" href="products">
+                                    Produtos
+                                </a>
+                            <a class="navbar-item" href="about">
+                                   Sobre
+                                </a>
+                            
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                        Account
+                                    </a>
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                            Dashboard
+                                        </a>
+                                    <a class="navbar-item">
+                                            Profile
+                                        </a>
+                                    <a class="navbar-item">
+                                            Settings
+                                        </a>
+                                    <hr class="navbar-divider">
+                                    <div class="navbar-item">
+                                        Logout
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-        <% }); %>                
+            </nav>
+            <!-- END NAV -->
+
+    <div class="container">
+        <div id="flow">
+            <span class="flow-1"></span>
+            <span class="flow-2"></span>
+            <span class="flow-3"></span>
+        </div>
+        <div class="section">
+            <div class="box">
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input class="input has-text-centered" type="search" placeholder="» » » » » » find me « « « « « «">
+                    </div>
+                    <div class="control">
+                        <a class="button is-info">Search</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developers -->
+            <div class="row columns">
+            
+            
+
+            <!-- End Developers -->
+
+            <!-- Staff -->
+            <div class="row columns is-multiline">
+
+                    <% prod_list.forEach((prod,index) => { %>
+
+                    
+                    <div class="column is-one-third">
+                            <a href="viewer?<%= prod.slug %>">
+                            <div class="card large round">
+                                <div class="card-image ">
+                                    <figure class="image">
+                                        <img class="image is-4by2" src="<%= prod.image %>" alt="<%= prod.name %>">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-4 no-padding"><%= prod.name %></p>
+                                            <p class="subtitle is-6"> R$: <%= prod.valor %></p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                            <%= prod.descricao %>                                    </div>
+                                </div>
+                            </div> </a>
+                        </div>
+                   
+                        <% }); %>    
+            </div>
+            <!-- End Staff -->
+        </div>
     </div>
+
+    <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <div class="soc">
+                        <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <p>
+                        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. 
+                        The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+            <script src="../js/bulma.js"></script>
+
+
 </body>
 
 </html>

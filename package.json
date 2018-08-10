@@ -17,6 +17,7 @@
     "request": "^2.87.0"
   },
   "devDependencies": {
+    "bulma": "^0.7.1",
     "mocha": "^5.2.0",
     "mockserver": "^1.11.0",
     "node-sass": "^4.9.2"
