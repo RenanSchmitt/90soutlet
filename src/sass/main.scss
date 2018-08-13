@@ -9,14 +9,14 @@
     font-size: 16px;
     line-height: 1.7;
     color: #777;
-    padding: 30px; }
+  }
   
   .header {
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(to right bottom, rgba(105, 103, 226, 0.8), rgba(24, 31, 29, 0.8)), url(../images/banner.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    // clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
     position: relative; }
   
   .header__logo-box {

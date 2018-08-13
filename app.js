@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var aboutRouter = require('./routes/about');
 var productsRouter = require('./routes/products');
-var viewerRouter = require('./routes/viewer');
+var productRouter = require('./routes/product');
 var loginRouter = require('./routes/login');
 
 var app = express();
@@ -27,7 +27,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/about', aboutRouter);
 app.use('/products', productsRouter);
-app.use('/viewer', viewerRouter);
+app.use('/product', productRouter);
 app.use('/login', loginRouter);
 
 
