@@ -8,7 +8,7 @@ products = [
       "name" : "Chápeu",
       "slug" : "chapeu",
       "image" : "images/chapeu.jpg",
-      "descricao" : "É um chapéu muito bonito.",
+      "descricao" : "Chapéu na cor preta.",
       "valor" : 150.00,   
       "tamanho" : "10",
     },
@@ -43,5 +43,13 @@ products = [
       "descricao" : "Ótimo casaco, esta em perfeitas condições..",
       "valor" : 260.00,
       "tamanho" : "M",   
-    }
+    },
+    {    
+      "name" : "Blusa Verde ",
+      "slug" : "blusa-verda",    
+      "image" : "images/.jpg",
+      "descricao" : "Linda blusa verde",
+      "valor" : 125.00,
+      "tamanho" : "P",   
+    },
   ];

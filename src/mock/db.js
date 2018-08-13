@@ -46,6 +46,14 @@ const products = [
       "descricao" : "Touca de lã preta, combina com tudo",
       "valor" : 25.00,
       "tamanho" : "10",   
+    },
+    {    
+      "name" : "Blusa Verde ",
+      "slug" : "blusa-verda",    
+      "image" : "images/blusa-verde.jpg",
+      "descricao" : "Linda blusa verde",
+      "valor" : 125.00,
+      "tamanho" : "P",   
     }
   ];
   
