@@ -54,7 +54,17 @@ const products = [
       "descricao" : "Linda blusa verde",
       "valor" : 125.00,
       "tamanho" : "P",   
+    },
+    {    
+      "name" : "T-Shirt Preta ",
+      "slug" : "tshirt-preta",    
+      "image" : "images/tshirt.jpg",
+      "descricao" : "Linda t-shirt preta, combina com tudo",
+      "valor" : 75.00,
+      "tamanho" : "M",   
     }
+
+
   ];
   
   module.exports = products;
