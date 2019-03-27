@@ -1,7 +1,7 @@
 {
   "name": "project",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "start": "node ./bin/www",
     "sassc": "node-sass src/sass/main.scss public/stylesheets/style.css"
