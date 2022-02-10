@@ -21,6 +21,6 @@
     "bulma": "^0.7.1",
     "mocha": "^5.2.0",
     "mockserver": "^1.11.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   }
 }
